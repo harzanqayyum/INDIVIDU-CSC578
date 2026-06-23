@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="header">
+        <img id="header-img" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="Company Logo">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#video-section">How It Works</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="hero">
+            <h2>Handcrafted, Homegrown Masterpieces</h2>
+            <form id="form" action="https://www.freecodecamp.org/email-submit">
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter your email address" 
+                    required
+                >
+                <input type="submit" id="submit" value="Get Started">
+            </form>
+        </section>
+
+        <section id="features">
+            <div class="feat-box">
+                <h3>Premium Materials</h3>
+                <p>Our products use the highest quality components sourced sustainably from local providers.</p>
+            </div>
+            <div class="feat-box">
+                <h3>Fast Shipping</h3>
+                <p>We ensure that your item reaches your doorstep securely and exactly on schedule.</p>
+            </div>
+        </section>
+
+        <section id="video-section">
+            <iframe 
+                id="video" 
+                src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc" 
+                title="Product Video" 
+                allowfullscreen
+            ></iframe>
+        </section>
+
+        <section id="pricing">
+            <div class="product-card">
+                <div class="level">Starter Pack</div>
+                <h2>$100</h2>
+                <p>Basic features included.</p>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product-card">
+                <div class="level">Pro Version</div>
+                <h2>$250</h2>
+                <p>All elite features included.</p>
+                <button class="btn">Select</button>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
