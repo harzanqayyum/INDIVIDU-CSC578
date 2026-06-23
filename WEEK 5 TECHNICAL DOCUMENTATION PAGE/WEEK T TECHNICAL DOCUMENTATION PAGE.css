@@ -1,0 +1,90 @@
+/* Global Setup */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  color: #333;
+}
+
+/* 1. Left Fixed Navbar Styles */
+#navbar {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f7f9fa;
+  border-right: 2px solid #e1e4e6;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #e1e4e6;
+}
+
+.nav-link {
+  display: block;
+  padding: 15px 20px;
+  color: #4a5568;
+  text-decoration: none;
+  border-bottom: 1px solid #e1e4e6;
+}
+
+.nav-link:hover {
+  background-color: #edf2f7;
+}
+
+/* 2. Main Layout Styles */
+#main-doc {
+  margin-left: 320px; /* Leaves space so the layout doesn't clip behind the fixed nav */
+  padding: 40px;
+  max-width: 800px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+.main-section header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+code {
+  display: block;
+  background-color: #f1f3f5;
+  padding: 15px;
+  font-family: monospace;
+  border-left: 4px solid #4a5568;
+  margin: 15px 0;
+}
+
+ul {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+/* 3. Media Query for Smaller Devices (Responsive Control) */
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid #e1e4e6;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
